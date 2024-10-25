@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Личный кабинет - Образовательная платформа Profile+</title>
+    <link rel="stylesheet" href="shared.css"/>
+    <link rel="stylesheet" href="cabinet.css"/>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="header-main">
+                <nav id="navbar"> 
+                    <div class="navbar-left" id="logo-image">
+                        <a href="home.html">
+                            <img src="./resources/logo.png" alt="Логотип"/>
+                        </a>
+                    </div>
+                    <ul id="nav-list">
+                        <li><a class="nav-links auth-links" href="home.html">ГЛАВНАЯ</a></li>
+                        <li><a class="nav-links auth-links" href="surveys.html">ОПРОСЫ</a></li>
+                        <li><a class="nav-links auth-links" href="spisok.html">УЧАЩИЕСЯ</a></li>
+                        <li><a class="nav-links auth-links" id="my-class-link" href="meineclasse.html">МОЙ КЛАСС</a></li>
+                    </ul>
+                    <div class="navbar-right" id="profile-icon">
+                        <a href="/">
+                            <svg width="50" height="50" viewBox="0 0 24 24" style="stroke: var(--icon-stroke-dark); fill: var(--icon-bg-dark)" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="9" stroke-width="2" />
+                                <circle cx="12" cy="10" r="3" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M17.7805 18.8264C17.9076 18.7566 17.9678 18.6055 17.914 18.4708C17.5284 17.5045 16.7856 16.6534 15.7814 16.0332C14.6966 15.3632 13.3674 15 12 15C10.6326 15 9.30341 15.3632 8.21858 16.0332C7.21444 16.6534 6.4716 17.5045 6.08598 18.4708C6.03223 18.6055 6.09236 18.7566 6.21948 18.8264C9.81971 20.803 14.1803 20.803 17.7805 18.8264Z" style="fill: var(--icon-stroke-dark)"/>
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div id="topbar">
+            <p id="topbar-text">ЛИЧНЫЙ КАБИНЕТ</p>
+        </div>
+        <div class="container">
+            <div class="profile-info">
+                <div class="profile-photo-section">
+                    <div class="profile-photo">
+                        <svg width="100%" height="100%" viewBox="0 0 24 24" style="stroke: var(--icon-stroke-dark); fill: var(--icon-bg-dark)" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke-width="1" />
+                            <circle cx="12" cy="10" r="3" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M17.7805 18.8264C17.9076 18.7566 17.9678 18.6055 17.914 18.4708C17.5284 17.5045 16.7856 16.6534 15.7814 16.0332C14.6966 15.3632 13.3674 15 12 15C10.6326 15 9.30341 15.3632 8.21858 16.0332C7.21444 16.6534 6.4716 17.5045 6.08598 18.4708C6.03223 18.6055 6.09236 18.7566 6.21948 18.8264C9.81971 20.803 14.1803 20.803 17.7805 18.8264Z"/>
+                        </svg>
+                    </div>
+                    <h2 class="name" style ="color: var(--primary-color)">ИВАН ИВАНОВ</h2> 
+                    <p class="role"style ="color: var(--primary-color)">Студент</p>
+                </div>
+                <div class="personal-info">
+                    <h3 style = "color: var(--primary-color)">Личная информация</h3>
+                    <ul>
+                        <li class="info-item">
+                            <div class="left-side">
+                                <input type="tel" placeholder="Номер телефона:">
+                            </div>
+                            <div class="right-side">
+                                <input type="email" placeholder="Email:">
+                            </div>
+                        </li>
+                        <li class="info-item">
+                            <div class="left-side">
+                                <input type="dr" placeholder="Дата рождения:">
+                            </div>
+                            <div class="right-side">
+                                <input type ="pol" placeholder="Пол:">
+                            </div>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Адрес:">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "academcont">
+            <div class="academic-info">
+                <h3 style = "color: #05386B;"> Учебная информация</h3>
+                <ul>
+                    <li>
+                        <input type="inf" placeholder="ID в системе">
+                    </li>
+                    <li>
+                        <input type="inf" placeholder="ID в учереждении">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

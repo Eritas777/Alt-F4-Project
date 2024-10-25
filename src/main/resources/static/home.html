@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Главная - Образовательная платформа Profile+</title>
+    <link rel="stylesheet" href="shared.css"/>
+    <link rel="stylesheet" href="home.css"/>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="header-main">
+                <nav id="navbar"> 
+                    <div class="navbar-left" id="logo-image">
+                        <a href="/">
+                            <img src="./resources/logo.png" alt="Логотип"/>
+                        </a>
+                    </div>
+                    <ul id="nav-list">
+                        <li><a class="nav-links auth-links" href="/">ГЛАВНАЯ</a></li>
+                        <li><a class="nav-links auth-links" href="surveys.html">ОПРОСЫ</a></li>
+                        <li><a class="nav-links auth-links" href="spisok.html">УЧАЩИЕСЯ</a></li>
+                        <li><a class="nav-links auth-links" id="my-class-link" href="meineclasse.html">МОЙ КЛАСС</a></li>
+                        <li><a class="nav-links auth-links" id="professors-link" href="#">ПРЕПОДАВАТЕЛИ</a></li>
+                    </ul>
+                    <div class="navbar-right" id="profile-icon">
+                        <a href="cabinet.html">
+                            <svg width="50" height="50" viewBox="0 0 24 24" style="stroke: var(--icon-stroke-dark); fill: var(--icon-bg-dark)" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="9" stroke-width="2" />
+                                <circle cx="12" cy="10" r="3" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M17.7805 18.8264C17.9076 18.7566 17.9678 18.6055 17.914 18.4708C17.5284 17.5045 16.7856 16.6534 15.7814 16.0332C14.6966 15.3632 13.3674 15 12 15C10.6326 15 9.30341 15.3632 8.21858 16.0332C7.21444 16.6534 6.4716 17.5045 6.08598 18.4708C6.03223 18.6055 6.09236 18.7566 6.21948 18.8264C9.81971 20.803 14.1803 20.803 17.7805 18.8264Z" style="fill: var(--icon-stroke-dark)"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="navbar-right nav-links" id="authorization-link" href="register.html">ВХОД | РЕГИСТРАЦИЯ</a>
+                </nav>
+            </div>
+        </header>
+        <div id="topbar"></div>  
+        <main>
+            <section id="main-content">
+                <img id="graphs-image" src="./resources/graphs.png" alt="Графики"/>
+                <div id="main-desc">
+                    <p>Управляйте образованием с мудростью!</p>
+                    <p>Наша платформа предлагает аналитические данные и результаты тестирования для учеников, преподавателей и администрации.</p>
+                    <p>Ваша образовательная система - под контролем!</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="footer-content">
+                <div class="feature-desc">
+                    <svg width="125" height="125" viewBox="0 0 24 24" fill="none" style="stroke: var(--icon-stroke-light)" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M17 9L13.9558 13.5662C13.5299 14.2051 12.5728 14.1455 12.2294 13.4587L11.7706 12.5413C11.4272 11.8545 10.4701 11.7949 10.0442 12.4338L7 17"stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/>
+                    </svg>
+                    <p>ЭФФЕКТИВНОСТЬ ПРЕПОДАВАТЕЛЕЙ</p>
+                </div>
+                <div class="feature-desc">
+                    <svg width="125" height="125" viewBox="0 0 24 24" fill="none" style="stroke: var(--icon-stroke-light)" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.81702 16.2453C6.11379 16.6776 6.45649 17.0796 6.84073 17.4438C7.89279 18.441 9.21126 19.1119 10.6366 19.3754C12.062 19.6389 13.5332 19.4837 14.8722 18.9286C16.2113 18.3735 17.3607 17.4423 18.1816 16.2476C19.0025 15.0529 19.4595 13.6459 19.4975 12.1969C19.5355 10.7479 19.1528 9.31888 18.3956 8.08282C17.6385 6.84675 16.5394 5.85658 15.2313 5.23209C14.3961 4.83339 13.4986 4.59466 12.5848 4.52319L12.862 5.55777C13.5308 5.64725 14.1852 5.8408 14.8004 6.13453C15.9341 6.67575 16.8867 7.5339 17.5429 8.60516C18.1991 9.67641 18.5308 10.9149 18.4979 12.1707C18.4649 13.4265 18.0688 14.6459 17.3574 15.6813C16.646 16.7167 15.6498 17.5238 14.4893 18.0049C13.3288 18.486 12.0538 18.6204 10.8184 18.3921C9.5831 18.1637 8.44043 17.5822 7.52865 16.718C7.28283 16.485 7.05664 16.2342 6.85159 15.9681L5.81702 16.2453Z" fill="white"/>
+                        <path d="M5.91239 4.06647C6.68924 3.47037 7.54796 2.99272 8.46042 2.64739C8.87978 2.48868 9.08946 2.40932 9.28694 2.51053C9.48442 2.61174 9.54649 2.84338 9.67063 3.30667L11.7412 11.0341C11.8632 11.4894 11.9242 11.7171 11.8206 11.8964C11.7171 12.0758 11.4894 12.1368 11.0341 12.2588L3.30667 14.3294C2.84338 14.4535 2.61174 14.5156 2.42535 14.3952C2.23896 14.2747 2.20284 14.0535 2.13061 13.6109C1.97344 12.6481 1.95774 11.6656 2.08555 10.6947C2.25696 9.39275 2.68314 8.13728 3.33975 7C3.99636 5.86272 4.87054 4.8659 5.91239 4.06647Z"/>
+                    </svg>
+                    <p>АНАЛИТИКА УСПЕХА УЧЕНИКОВ</p>
+                </div>            
+                <div class="feature-desc">
+                    <svg width="125" height="125" viewBox="0 0 24 24" fill="none" style="stroke: var(--icon-stroke-light)" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M8 10L8 16" stroke-linecap="round" stroke-linejoin="round"/>
+                         <path d="M12 12V16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 8V16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="3" y="4" width="18" height="16" rx="2"/>
+                    </svg>
+                    <p>ГРАМОТНАЯ СТАТИСТИКА</p>
+                </div>
+            </div>
+            <div id="help-wrapper">
+                <div id="help-icon">
+                    <a href="#">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" style="stroke: var(--icon-stroke-light)" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" style="fill: var(--icon-bg-light)" stroke-width="2"/>
+                            <circle cx="12" cy="18" r="0.5" style="fill: var(--icon-stroke-light)" stroke-width="2"/>
+                            <path d="M12 16V14.5811C12 13.6369 12.6042 12.7986 13.5 12.5V12.5C14.3958 12.2014 15 11.3631 15 10.4189V9.90569C15 8.30092 13.6991 7 12.0943 7H12C10.3431 7 9 8.34315 9 10V10" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    <script src="home.js"></script>
+</body>
+</html>

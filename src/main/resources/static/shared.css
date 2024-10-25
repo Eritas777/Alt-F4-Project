@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Rubik Mono One');
+
+:root {
+    --primary-bg-color: #E5F0E8;
+    --primary-color: #05386B;
+    --secondary-bg-color: #05386BC7;
+    --secondary-color: #E5F0E8;
+
+    --icon-stroke-dark: #05386B;
+    --icon-stroke-light: #EDF5E1;
+    --icon-bg-light: #7593A6;
+    --icon-bg-dark: #809BAD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Rubik Mono One';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 40px;
+    color: var(--primary-color);
+
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+
+    font-family: 'Inter';
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+}
+
+#header-main {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-left, .navbar-right {
+    flex: 0 0 auto;
+}
+
+#logo-image {
+    float: left;
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#nav-list {
+    list-style-type: none;
+    text-align: center;
+    flex: 1;
+}
+
+#nav-list li {
+    display: inline;
+}
+
+.nav-links {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+#profile-icon {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#topbar {
+    height: auto;
+    min-height: 60px;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-color);
+    font-size: 35px;
+    padding: 1px;
+}
+
+#topbar-text {
+    position: relative;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    flex: 1;
+}

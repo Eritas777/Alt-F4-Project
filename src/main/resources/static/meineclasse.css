@@ -1,0 +1,141 @@
+
+        main {
+
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .list {
+            margin-left: 1%;
+            min-height: 100vh;
+            flex: 1;
+            width: 20%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .list h3 {
+            margin-top: 0;
+        }
+
+        .list input[type="text"] {
+            box-shadow: 0px 4px 8px 0px #00000026;
+            margin-left: 2%;
+            font-family: 'Rubik Mono One';
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            list-style-type: none;
+            border: 3px solid #05386B;
+            background: linear-gradient(0deg, rgba(229, 233, 224, 0.86), rgba(229, 233, 224, 0.86)),linear-gradient(189.8deg, rgba(237, 245, 225, 0.0666667) -126.97%, rgba(142, 228, 175, 0.114) 354.28%);
+            border-radius: 5px;
+            width: 69%; /* Ширина контейнера */
+            padding: 8px;
+        }
+
+        .list .filter {
+            display: flex;
+            align-items: center;
+        }
+
+        .list .filter i {
+            margin-left: 10px;
+        }
+
+        .graphics {
+            background: linear-gradient(0deg, rgba(229, 233, 224, 0.86), rgba(229, 233, 224, 0.86)),
+            linear-gradient(189.8deg, rgba(237, 245, 225, 0.0666667) -126.97%, rgba(142, 228, 175, 0.114) 354.28%);
+
+            margin-top: -50%;
+            place-items: center;
+            height: 20vh;
+            width: 50%;
+            padding: 20px;
+            border-radius: 5px;
+            flex-grow: 1;
+        }
+
+        .graphic {
+            width: 100%;
+            place-items: center;
+            padding: 20px;
+            border-radius: 5px;
+            flex-grow: 1;
+            margin-bottom: 8%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 250px;
+            font-family: 'Rubik Mono One';
+            font-size: 50px;
+            line-height: 30px;
+            font-weight: bolder;
+        }
+
+        .graphics .graphic + .graphic {
+            margin-top: 20px;
+        }
+        .profile-photo {
+            width: 50px; /* Ширина фото */
+            height: 50px; /* Высота фото */
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px; /* Отступ снизу от фото */
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1%;
+            margin-top: 0.5%;
+            border: 5px solid #05386B; /* Рамка вокруг фото */
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .list span {
+            left: 0;
+            margin-top: 0.1%;
+            margin-left: 19%;
+            position: absolute;
+            display: inline-block; 
+            width: 50px; 
+            height: 45px; 
+            cursor: pointer;
+        }  
+        .list svg{
+            left: 0;
+            margin-top: 0%;
+            margin-left: 16.5%;
+            position: absolute;
+            display: inline-block; 
+            width: 50px; 
+            height: 50px; 
+            cursor: pointer;
+        }
+        .list ul{
+            display:flex;
+            left: 0;
+            width: 80%;
+            min-height: 100vh;
+            margin-left: -25px;
+            flex-direction: column;
+        }
+        .list li{
+            width: 98%;
+            padding: 20px;
+            border-top: 2px  solid #05386B;
+            border-bottom: 2px  solid #05386B; 
+            height: 15px;
+            background-color: #fff; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }

@@ -1,0 +1,175 @@
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #E5F0E8;
+            color: #05386B;
+            padding: 10px 0;
+            margin: 0;
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        nav {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        nav a {
+            font-family: "Inter";
+            font-size: 25px;
+            font-weight: 700;
+            color: #05386B;
+            text-decoration: none;
+            padding: 0 25px;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            top:0;
+            position:relative;
+            z-index: 1;
+            font-family: 'Rubik Mono One';
+            font-size: 30px;
+            line-height: 30px;
+            background-color: #05386BC7;
+            color: #E5F0E8;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            text-align: left;
+        }
+
+        .search-bar {
+            padding: 10px 0;
+            width: 100%;
+            height: 50px;
+            flex: 1;
+            background-color: #E5F0E8;
+            display: flex;
+            justify-content: right;
+            align-items: right;
+
+        }
+
+        .search-bar input {
+            box-shadow: 0px 4px 8px 0px #00000026;
+            position: absolute;
+            left: 0;
+            margin-left: 2%;
+            font-family: 'Rubik Mono One';
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            list-style-type: none;
+            border: 3px solid #05386B;
+            background: linear-gradient(0deg, rgba(229, 233, 224, 0.86), rgba(229, 233, 224, 0.86)),linear-gradient(189.8deg, rgba(237, 245, 225, 0.0666667) -126.97%, rgba(142, 228, 175, 0.114) 354.28%);
+            border-radius: 5px;
+            width: 15%; /* Ширина контейнера */
+            padding: 8px;
+        }
+
+        .search-bar button {
+            line-height: 30px;
+            font-weight: bolder;
+            font-family: 'Rubik Mono One';
+            font-size: 25px;
+            background: linear-gradient(182.85deg, rgba(205, 240, 153, 0.112) -41.23%, rgba(4, 23, 43, 0.2) 96.81%);
+            border: 3px solid #06315C;
+            box-shadow: 0px 4px 4px 0px #00000026;
+            color: #05386B;
+            width: 17%;
+            padding: 8px 15px;
+            margin-right: 2%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .students-list {
+            height: 100vh;
+            display: flex;
+            width: 100%;
+            place-items: center;
+            flex-direction: column; 
+        }
+
+        .student {
+            width: 98%;
+            padding: 15px;
+            border-top: 2px  solid #05386B;
+            border-bottom: 2px  solid #05386B;
+            border-radius: 5px;
+            height: 5%;
+            background-color: #fff; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .student h4 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .student p {
+            margin: 0;
+            color: #666;
+        }
+        .profile-photo {
+            width: 50px; /* Ширина фото */
+            height: 50px; /* Высота фото */
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px; /* Отступ снизу от фото */
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1%;
+            border: 5px solid #05386B; /* Рамка вокруг фото */
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .search-bar svg {
+            left: 0;
+            margin-top: 1.05%;
+            margin-left: 16%;
+            position: absolute; 
+            right: 10px; 
+            transform: translateY(-50%); 
+            pointer-events: none; 
+        }
+
+
+        .search-bar span {
+            left: 0;
+            margin-top: 1.2%;
+            margin-left: 18%;
+            position: absolute;
+            display: inline-block; 
+            width: 50px; 
+            height: 50px; 
+            cursor: pointer;
+        }     
+        input[type="text"]{
+            color: #05386BC7;
+        }  

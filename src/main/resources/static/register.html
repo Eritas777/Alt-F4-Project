@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="registration_form.css"/> 
+    <link rel="stylesheet" href="register.css"/>
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Имя:</label>
+                <input type="text" id="username" name="username" placeholder="Введите свое имя">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Фамилия:</label>
+                <input type="text" id="username" name="username" placeholder="Введите свою фамилию">
+            </div>
+            <div class="form-group">
+                <label for="university">Образовательное учереждение:</label>
+                <input type="text" id="username" name="username" placeholder="Введите название учереждения">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите email">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Подтверждение пароля:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Подтвердите пароль">
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Номер телефона:</label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="Введите номер телефона">
+            </div>
+            <div class="form-group">
+                <label for="date-of-birth">Дата рождения:</label>
+                <input type="text" id="date-of-birth" name="date-of-birth" placeholder="Введите дату рождения">
+            </div>
+            <div class="form-group">
+                <label for="gender">Пол:</label>
+                <input type="text" id="gender" name="gender" placeholder="Укажите пол">
+            </div>
+            <div class="form-group">
+                <label for="address">Адрес:</label>
+                <input type="text" id="address" name="address" placeholder="Введите адрес">
+            </div>
+            <div class ="form-group">
+                <label for="role">Кто вы</label>
+                <select id ="role" name ="role">
+                    <option value="student">Студент</option>
+                    <option value="teacher">Преподаватель</option>
+                    <option value="adm">Администратор</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <div id="reg-options">
+                <ul>
+                    <a href="auth.html">Уже зарегистрированы?</a>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>

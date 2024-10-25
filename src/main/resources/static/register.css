@@ -1,0 +1,13 @@
+.form-group select { /*  Добавляем  select  к  селектору  */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#reg-options a {
+    padding: 20px 45px;
+    color: rgb(88, 163, 195);
+    text-decoration: none;
+}
