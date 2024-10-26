@@ -1,9 +1,12 @@
 package ru.profileplus.profileplusproject.controller;
 
 import lombok.AllArgsConstructor;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import ru.profileplus.profileplusproject.model.User;
 import ru.profileplus.profileplusproject.repository.UserRepository;
 
@@ -19,32 +22,32 @@ public class UserController {
     private PasswordEncoder encoder;
 
     @GetMapping("/mainpage")
-    public String mainpage() {
-        return "Welcome to profileplus";
+    public ModelAndView mainpage() {
+        return new ModelAndView("redirect:/home.html");
     }
 
     @PostMapping("/new-student")
-    public String addStudent(@RequestBody User user) {
+    public ResponseEntity addStudent(@RequestBody User user) {
         user.setRole("STUDENT");
         user.setPassword(encoder.encode(user.getPassword()));
         repository.save(user);
-        return "Student created";
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body("{\"message\": \"Студент успешно зарегистрирован\"}");
     }
 
     @PostMapping("/new-teacher")
-    public String addTeacher(@RequestBody User user) {
+    public ResponseEntity addTeacher(@RequestBody User user) {
         user.setRole("TEACHER");
         user.setPassword(encoder.encode(user.getPassword()));
         repository.save(user);
-        return "Teacher created";
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body("{\"message\": \"Преподаватель успешно зарегистрирован\"}");
     }
 
     @PostMapping("/new-admin")
-    public String addAdmin(@RequestBody  User user) {
+    public ResponseEntity addAdmin(@RequestBody  User user) {
         user.setRole("ADMIN");
         user.setPassword(encoder.encode(user.getPassword()));
         repository.save(user);
-        return "Admin created";
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body("{\"message\": \"Администратор успешно зарегистрирован\"}");
     }
 
     @PreAuthorize("hasAuthority('ADMIN') or hasAuthority('TEACHER') or (hasAuthority('STUDENT') and #email == authentication.name)")

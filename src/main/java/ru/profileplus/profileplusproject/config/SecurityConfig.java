@@ -13,7 +13,12 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import ru.profileplus.profileplusproject.service.CustomUserDetailService;
+
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
@@ -28,13 +33,23 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(auth -> auth.requestMatchers("api/platform/mainpage",
-                                "api/platform/new-student",
+                    .authorizeHttpRequests(auth -> auth.requestMatchers("/**",
+                                "/*.css",
+                                "/*.js",
+                                "/*.ico",
+                                "/*.png",
+                                "/*.html",
+                                "/static/**",
+                                "/api/platform/mainpage",
                                 "api/platform/new-teacher",
                                 "api/platform/new-admin").permitAll()
-                        .requestMatchers("api/platform/**").authenticated())
-                .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
-                .build();
+                            .anyRequest().authenticated())
+                    .formLogin()
+                        .loginPage("/auth.html") // Укажите вашу страницу логина
+                        .loginProcessingUrl("/login") // URL, на который будет отправлена форма логина
+                        .defaultSuccessUrl("/home.html", true) // URL для перенаправления после успешной аутентификации
+                    .and()
+                    .build();
     }
 
     @Bean
