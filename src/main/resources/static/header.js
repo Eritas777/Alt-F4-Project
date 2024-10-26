@@ -2,12 +2,12 @@ const headerHtml = `
     <div id="header-main">
         <nav id="navbar"> 
             <div class="navbar-left" id="logo-image">
-                <a href="/">
+                <a href="home.html">
                     <img src="./resources/logo.png" alt="Логотип"/>
                 </a>
             </div>
             <ul id="nav-list">
-                <li><a class="nav-links auth-links" href="/">ГЛАВНАЯ</a></li>
+                <li><a class="nav-links auth-links" href="home.html">ГЛАВНАЯ</a></li>
                 <li><a class="nav-links auth-links" href="surveys.html">ОПРОСЫ</a></li>
                 <li><a class="nav-links auth-links" href="spisok.html">УЧАЩИЕСЯ</a></li>
                 <li><a class="nav-links auth-links" id="my-class-link" href="meineclasse.html">МОЙ КЛАСС</a></li>
