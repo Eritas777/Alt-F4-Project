@@ -3,7 +3,7 @@ const headerHtml = `
         <nav id="navbar"> 
             <div class="navbar-left" id="logo-image">
                 <a href="home.html">
-                    <img src="./resources/logo.png" alt="Логотип"/>
+                    <img src="logo.png" alt="Логотип"/>
                 </a>
             </div>
             <ul id="nav-list">
