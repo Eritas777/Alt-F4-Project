@@ -5,7 +5,13 @@ document.getElementById('registration-form').addEventListener('submit', function
     const userData = {
         email: document.getElementById('email').value,
         password: document.getElementById('password').value,
-        role: document.getElementById('role').value
+        role: document.getElementById('role').value,
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        phoneNumber: document.getElementById('phone-number').value,
+        dateOfBirth: document.getElementById('date-of-birth').value,
+        gender: document.getElementById('gender').value,
+        residentialAdress: document.getElementById('address').value
     };
 
      let apiUrl;
@@ -42,6 +48,7 @@ document.getElementById('registration-form').addEventListener('submit', function
     })
     .then(data => {
         console.log('Успешно зарегистрировано:', data);
+        window.location.href = 'http://localhost:8080/auth.html';
         // Здесь можно обработать успешную регистрацию (например, перенаправить пользователя)
     })
     .catch(error => {

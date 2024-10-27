@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,6 +25,11 @@ public class UserController {
     @GetMapping("/mainpage")
     public ModelAndView mainpage() {
         return new ModelAndView("redirect:/home.html");
+    }
+
+    @GetMapping("/email")
+    public String getUserEmail(Authentication authentication) {
+        return authentication.getName();
     }
 
     @PostMapping("/new-student")

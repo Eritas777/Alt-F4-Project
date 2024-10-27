@@ -14,40 +14,40 @@ header {
     list-style-type: none;
     border: 5px solid #f0f9e1;
     border-radius: 40px;
-    background-color: var(--secondary-color); /* Цвет фона контейнера */
+    background-color: var(--secondary-color); /* Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð° */
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 60%; /* Ширина контейнера */
-    margin: 20px auto; /* Автоматические отступы слева и справа */
-    display: flex; /* Делаем контейнер flex-контейнером */
-    flex-direction: column; /* Размещаем элементы вертикально */
+    width: 60%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð° */
+    margin: 20px auto; /* ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ñ‹ ÑÐ»ÐµÐ²Ð° Ð¸ ÑÐ¿Ñ€Ð°Ð²Ð° */
+    display: flex; /* Ð”ÐµÐ»Ð°ÐµÐ¼ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ flex-ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð¾Ð¼ */
+    flex-direction: column; /* Ð Ð°Ð·Ð¼ÐµÑ‰Ð°ÐµÐ¼ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾ */
 }
 
 .profile-info {
     list-style-type: none;
     display: flex;
-    width: 100%; /* Ширина блока информации */
-    margin-bottom: 10px; /* Отступ между блоками */
+    width: 100%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð±Ð»Ð¾ÐºÐ° Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ */
+    margin-bottom: 10px; /* ÐžÑ‚ÑÑ‚ÑƒÐ¿ Ð¼ÐµÐ¶Ð´Ñƒ Ð±Ð»Ð¾ÐºÐ°Ð¼Ð¸ */
 }
 
 .profile-photo-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Выравниваем по центру */
-    width: 30%; /* Ширина секции с фото */
+    align-items: center; /* Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°ÐµÐ¼ Ð¿Ð¾ Ñ†ÐµÐ½Ñ‚Ñ€Ñƒ */
+    width: 30%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° ÑÐµÐºÑ†Ð¸Ð¸ Ñ Ñ„Ð¾Ñ‚Ð¾ */
 }
 
 .profile-photo {
-    width: 150px; /* Ширина фото */
-    height: 150px; /* Высота фото */
+    width: 150px; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ñ„Ð¾Ñ‚Ð¾ */
+    height: 150px; /* Ð’Ñ‹ÑÐ¾Ñ‚Ð° Ñ„Ð¾Ñ‚Ð¾ */
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px; /* Отступ снизу от фото */
+    margin-bottom: 20px; /* ÐžÑ‚ÑÑ‚ÑƒÐ¿ ÑÐ½Ð¸Ð·Ñƒ Ð¾Ñ‚ Ñ„Ð¾Ñ‚Ð¾ */
     display: flex;
     background-color: white;
     justify-content: center;
     align-items: center;
-    border: 5px solid var(--primary-color); /* Рамка вокруг фото */
+    border: 5px solid var(--primary-color); /* Ð Ð°Ð¼ÐºÐ° Ð²Ð¾ÐºÑ€ÑƒÐ³ Ñ„Ð¾Ñ‚Ð¾ */
 }
 
 .profile-photo img {
@@ -58,15 +58,15 @@ header {
 
 .name {
     font-family: 'Roboto';
-    font-size: 30px; /* Размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
-    margin-bottom: 5px; /* Отступ снизу */
+    font-size: 30px; /* Ð Ð°Ð·Ð¼ÐµÑ€ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° */
+    font-weight: bold; /* Ð–Ð¸Ñ€Ð½Ñ‹Ð¹ ÑˆÑ€Ð¸Ñ„Ñ‚ */
+    margin-bottom: 5px; /* ÐžÑ‚ÑÑ‚ÑƒÐ¿ ÑÐ½Ð¸Ð·Ñƒ */
 }
 
 .role {
     font-family: 'Roboto';
-    font-size: 24px; /* Размер шрифта */
-    margin-bottom: 15px; /* Отступ снизу */
+    font-size: 24px; /* Ð Ð°Ð·Ð¼ÐµÑ€ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° */
+    margin-bottom: 15px; /* ÐžÑ‚ÑÑ‚ÑƒÐ¿ ÑÐ½Ð¸Ð·Ñƒ */
 }
 
 .personal-info {
@@ -74,8 +74,8 @@ header {
     font-size: 30px;
     padding: 20px;
     border-radius: 5px;
-    list-style-type: none; 
-    width: 70%; /* Ширина секции с личной информацией */
+    list-style-type: none;
+    width: 70%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° ÑÐµÐºÑ†Ð¸Ð¸ Ñ Ð»Ð¸Ñ‡Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÐµÐ¹ */
 }
 
 h3 {
@@ -83,10 +83,11 @@ h3 {
     margin-bottom: 10px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .info-item {
@@ -100,13 +101,15 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 45%; /* Ширина каждой половины */
+    width: 45%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° ÐºÐ°Ð¶Ð´Ð¾Ð¹ Ð¿Ð¾Ð»Ð¾Ð²Ð¸Ð½Ñ‹ */
 }
 
 input[type="password"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+<label id="userPhone" readonly>
+<label id="userEmail" readonly>
+<label id="userBirthday" readonly>
+<label id="userGender" readonly>
+<label id="userAddress" readonly>
 }
 
 input[type="tel"],
@@ -137,11 +140,11 @@ input[type = "inf"]{
     border-radius: 3px;
 }
 
-.academic-info {    
+.academic-info {
     font-family:  'Rubik Mono One';
     font-size: 30px;
     flex: 1;
-    margin-right: 20px; 
+    margin-right: 20px;
     justify-content: space-between; /* This property won't affect the input fields */
     align-items: center;
 }
@@ -154,19 +157,19 @@ input[type = "inf"]{
 }
 
 .academcont {
-    flex-wrap: nowrap; 
-    background-color: #ebf7ee; /* Цвет фона контейнера */
+    flex-wrap: nowrap;
+    background-color: #ebf7ee; /* Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð° */
     padding: 20px;
     border: 5px solid #f0f9e1;
     border-radius: 40px;
-    width: 60%; /* Ширина контейнера */
-    margin: 20px auto; /* Автоматические отступы слева и справа */
-    display: flex; /* Делаем контейнер flex-контейнером */
-    align-items: center; /* Выравниваем элементы по вертикали */
+    width: 60%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð° */
+    margin: 20px auto; /* ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ñ‹ ÑÐ»ÐµÐ²Ð° Ð¸ ÑÐ¿Ñ€Ð°Ð²Ð° */
+    display: flex; /* Ð”ÐµÐ»Ð°ÐµÐ¼ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ flex-ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð¾Ð¼ */
+    align-items: center; /* Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°ÐµÐ¼ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¿Ð¾ Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»Ð¸ */
 }
 
 .academic-info input {
-    flex: 1; /* Это позволит полям занимать доступное пространство */
+    flex: 1; /* Ð­Ñ‚Ð¾ Ð¿Ð¾Ð·Ð²Ð¾Ð»Ð¸Ñ‚ Ð¿Ð¾Ð»ÑÐ¼ Ð·Ð°Ð½Ð¸Ð¼Ð°Ñ‚ÑŒ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð¾ */
     padding: 8px;
     margin-top: 5px;
     margin-right: 10px;
@@ -175,6 +178,13 @@ input[type = "inf"]{
     border: 1px solid var(--primary-color);
 }
 #logo-image {
-    position: absolute; /* Делаем логотип абсолютным элементом */
-    left: 20px; /* Расположение логотипа с отступом слева */
+    position: absolute; /* Ð”ÐµÐ»Ð°ÐµÐ¼ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿ Ð°Ð±ÑÐ¾Ð»ÑŽÑ‚Ð½Ñ‹Ð¼ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð¼ */
+    left: 20px; /* Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿Ð° Ñ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ð¾Ð¼ ÑÐ»ÐµÐ²Ð° */
+}
+h2  {
+    display: inline-block; /* Ensures the spans behave like inline elements */
+  }
+li {
+
+    list-style-type: none;
 }
