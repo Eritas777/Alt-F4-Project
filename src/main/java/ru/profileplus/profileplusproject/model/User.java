@@ -28,4 +28,6 @@ public class User {
     private String phoneNumber;
     private String institutionID;
     private String role;
+    private String studyGroup;
+    private String academicDiscipline;
 }

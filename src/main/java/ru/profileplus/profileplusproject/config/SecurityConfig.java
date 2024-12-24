@@ -42,7 +42,8 @@ public class SecurityConfig {
                                 "/static/**",
                                 "/api/platform/mainpage",
                                 "api/platform/new-teacher",
-                                "api/platform/new-admin").permitAll()
+                                "api/platform/new-admin",
+                                    "api/platform/polls/**").permitAll()
                             .anyRequest().authenticated())
                     .formLogin()
                         .loginPage("/auth.html") // Укажите вашу страницу логина
