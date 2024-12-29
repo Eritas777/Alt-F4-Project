@@ -1,6 +1,7 @@
 package ru.profileplus.profileplusproject.controller;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import ru.profileplus.profileplusproject.model.Poll;
 import ru.profileplus.profileplusproject.service.PollService;
@@ -17,7 +18,8 @@ public class PollController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Poll> createPoll(@RequestBody Poll poll) {
+    public ResponseEntity<Poll> createPoll(@RequestBody Poll poll, Authentication authentication) {
+        poll.setCreatorEmail(authentication.getName());
         return ResponseEntity.ok(pollService.createPoll(poll));
     }
 

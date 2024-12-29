@@ -13,6 +13,7 @@ public class Poll {
     private Long id;
     private String title;
     private String description;
+    private String creatorEmail;
 
     @OneToMany(mappedBy = "poll", cascade = CascadeType.ALL)
     private List<Question> questions;

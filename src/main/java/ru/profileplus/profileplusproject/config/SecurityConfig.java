@@ -1,5 +1,6 @@
 package ru.profileplus.profileplusproject.config;
 
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -45,10 +46,12 @@ public class SecurityConfig {
                                 "api/platform/new-admin",
                                     "api/platform/polls/**").permitAll()
                             .anyRequest().authenticated())
-                    .formLogin()
-                        .loginPage("/auth.html") // Укажите вашу страницу логина
-                        .loginProcessingUrl("/login") // URL, на который будет отправлена форма логина
-                        .defaultSuccessUrl("/home.html", true) // URL для перенаправления после успешной аутентификации
+                            .httpBasic() // Использовать Basic Auth
+                            .and()
+                            .exceptionHandling()
+                            .authenticationEntryPoint((request, response, authException) -> {
+                                response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
+                            })
                     .and()
                     .build();
     }
