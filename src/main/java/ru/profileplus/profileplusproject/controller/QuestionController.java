@@ -31,8 +31,8 @@ public class QuestionController {
         return ResponseEntity.ok(questionService.getQuestion(questionId));
     }
 
-    @DeleteMapping("/delete")
-    public void deleteQuestion(@RequestBody Long questionId) {
+    @DeleteMapping("/delete/{questionId}")
+    public void deleteQuestion(@PathVariable Long questionId) {
         questionService.deleteQuestionFromPoll(questionId);
     }
 }

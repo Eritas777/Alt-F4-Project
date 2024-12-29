@@ -28,8 +28,8 @@ public class PollController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @DeleteMapping("/delete")
-    public void deletePoll(@RequestBody Long id) {
+    @DeleteMapping("/delete/{id}")
+    public void deletePoll(@PathVariable Long id) {
         pollService.deletePoll(id);
     }
 

@@ -18,18 +18,18 @@ public class OptionController {
         this.optionService = optionService;
     }
 
-    @PostMapping("/add-single")
-    public ResponseEntity<Option> addOption(@RequestBody Long questionId, Option option) {
+    @PostMapping("/add-single/{questionId}")
+    public ResponseEntity<Option> addOption(@PathVariable Long questionId, @RequestBody Option option) {
         return ResponseEntity.ok(optionService.addOptionToQuestion(questionId, option));
     }
 
-    @PostMapping("/add-multiple")
-    public void addOptions(Long questionId, List<Option> options) {
+    @PostMapping("/add-multiple/{questionId}")
+    public void addOptions(@PathVariable Long questionId, @RequestBody List<Option> options) {
         optionService.addOptionsToQuestion(questionId, options);
     }
 
-    @GetMapping("/options-list")
-    public ResponseEntity<List<Option>> getOptions(@RequestBody Long questionId) {
+    @GetMapping("/options-list/{questionId}")
+    public ResponseEntity<List<Option>> getOptions(@PathVariable Long questionId) {
         return ResponseEntity.ok(optionService.getOptionsByQuestionId(questionId));
     }
 
