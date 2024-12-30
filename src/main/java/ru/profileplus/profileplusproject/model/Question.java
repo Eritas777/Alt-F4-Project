@@ -13,6 +13,7 @@ public class Question {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String text;
+    private  List<String> respondedUsers;
 
     @ManyToOne
     @JoinColumn(name = "poll_id")

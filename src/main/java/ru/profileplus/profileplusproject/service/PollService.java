@@ -35,4 +35,6 @@ public class PollService {
     public Poll updatePoll(Poll poll) {
         return pollRepository.save(poll);
     }
+
+    public List<Poll> getPollsByUserEmail(String userEmail) { return pollRepository.findByCreatorEmail(userEmail); }
 }

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.profileplus.profileplusproject.model.Poll;
 import ru.profileplus.profileplusproject.service.PollService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -21,6 +22,13 @@ public class PollController {
     public ResponseEntity<Poll> createPoll(@RequestBody Poll poll, Authentication authentication) {
         poll.setCreatorEmail(authentication.getName());
         return ResponseEntity.ok(pollService.createPoll(poll));
+    }
+
+    @GetMapping("/my-polls")
+    public ResponseEntity<List<Poll>> getMyPolls(Authentication authentication) {
+        String userEmail = authentication.getName(); // Получение email текущего пользователя
+        List<Poll> polls = pollService.getPollsByUserEmail(userEmail);
+        return ResponseEntity.ok(polls);
     }
 
     @GetMapping("/{id}")
