@@ -13,6 +13,7 @@ public class Option {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String text;
+    private List<String> selectedUsers;
 
     @ManyToOne
     @JoinColumn(name = "question_id")

@@ -9,6 +9,7 @@ import ru.profileplus.profileplusproject.service.UserPollVisitService;
 import ru.profileplus.profileplusproject.service.UserQuestionAnswerService;
 import ru.profileplus.profileplusproject.service.UserSelectedOptionService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
