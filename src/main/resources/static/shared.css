@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
 @import url('https://fonts.googleapis.com/css?family=Rubik Mono One');
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
 
 :root {
     --primary-bg-color: #E5F0E8;
@@ -117,5 +118,6 @@ header {
 main {
     display: grid;
     place-items: center;
+	min-height: 100vh;
     flex: 1;
 }
