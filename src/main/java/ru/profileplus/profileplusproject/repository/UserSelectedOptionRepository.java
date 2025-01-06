@@ -6,5 +6,5 @@ import ru.profileplus.profileplusproject.model.UserSelectedOption;
 import java.util.List;
 
 public interface UserSelectedOptionRepository extends JpaRepository<UserSelectedOption, Long> {
-    List<UserSelectedOption> findByUserIdAndOptionId(String userEmail, Long optionId);
+    List<UserSelectedOption> findByUserEmailAndOptionId(String userEmail, Long optionId);
 }

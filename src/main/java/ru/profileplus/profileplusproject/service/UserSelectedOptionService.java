@@ -30,6 +30,6 @@ public class UserSelectedOptionService {
     }
 
     public List<UserSelectedOption> getSelectedOptions(String userEmail, Long optionId) {
-        return repository.findByUserIdAndOptionId(userEmail, optionId);
+        return repository.findByUserEmailAndOptionId(userEmail, optionId);
     }
 }

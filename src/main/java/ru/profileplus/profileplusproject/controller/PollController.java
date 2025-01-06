@@ -63,4 +63,10 @@ public class PollController {
         pollVisitService.recordVisit(authentication.getName(), pollId);
         return ResponseEntity.ok("Visit recorded.");
     }
+
+    @GetMapping("/{userEmail}/visited-polls")
+    public ResponseEntity<List<Poll>> getVisitedPolls(@RequestParam Long userEmail) {
+        List<Poll> polls = pollVisitService.getVisitedPollsByUserEmail(userEmail);
+        return ResponseEntity.ok(polls);
+    }
 }

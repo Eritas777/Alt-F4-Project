@@ -7,6 +7,7 @@ import ru.profileplus.profileplusproject.repository.PollRepository;
 import ru.profileplus.profileplusproject.repository.UserPollVisitRepository;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 public class UserPollVisitService {
@@ -19,7 +20,7 @@ public class UserPollVisitService {
     }
 
     public void recordVisit(String userEmail, Long pollId) {
-        if (!repository.existsByUserIdAndPollId(userEmail, pollId)) {
+        if (!repository.existsByUserEmailAndPollId(userEmail, pollId)) {
             UserPollVisit visit = new UserPollVisit();
             visit.setUserEmail(userEmail);
             Poll poll = pollRepository.findById(pollId).get();
@@ -27,5 +28,9 @@ public class UserPollVisitService {
             visit.setVisitedAt(LocalDateTime.now());
             repository.save(visit);
         }
+    }
+
+    public List<Poll> getVisitedPollsByUserEmail(Long userEmail) {
+        return repository.findVisitedPollsByUserEmail(userEmail);
     }
 }

@@ -20,7 +20,7 @@ public class UserQuestionAnswerService {
     }
 
     public boolean hasUserAnsweredQuestion(String userEmail, Long questionId) {
-        return repository.existsByUserIdAndQuestionId(userEmail, questionId);
+        return repository.existsByUserEmailAndQuestionId(userEmail, questionId);
     }
 
     public void recordAnswer(String userEmail, Long questionId) {
