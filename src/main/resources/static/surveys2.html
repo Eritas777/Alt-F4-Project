@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Опросы - Образовательная платформа Profile+</title>
+    <link rel="stylesheet" href="shared.css"/>
+    <link rel="stylesheet" href="surveys2.css"/>
+    <style>
+        .poll {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="header.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div id="topbar">
+            <p id="topbar-text">Опросы</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="poll-data"></div>
+        <div id="polls-container"></div>
+        <div id="questions-container"></div>
+        <div id="options-container"></div>
+        <button id="submit-answers">Подтвердить</button>
+        <div id="message-container" class="message"></div>
+        <div id="error-container" class="message error"></div>
+    </div>
+<script src="opros1.js"></script>
+</body>
+</html>
